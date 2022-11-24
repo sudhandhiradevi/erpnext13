@@ -1,0 +1,810 @@
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+18:11:09 Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/background_jobs.py", line 144, in execute_job
+    method(**kwargs)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/core/doctype/user/user.py", line 1130, in create_contact
+    contact.insert(
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/model/document.py", line 255, in insert
+    self._validate_links()
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/model/document.py", line 908, in _validate_links
+    frappe.throw(_("Could not find {0}").format(msg), frappe.LinkValidationError)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/__init__.py", line 504, in throw
+    msgprint(
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/__init__.py", line 479, in msgprint
+    _raise_exception()
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/__init__.py", line 434, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.LinkValidationError: Could not find User Id: mohan27895@gmail.com
+
+/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/botocore/httpsession.py:18: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/botocore/httpsession.py:18: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/botocore/httpsession.py:18: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/botocore/httpsession.py:18: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 427, in read_from_socket
+    bufflen = recv_into(self._sock, self._buffer)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/_compat.py", line 75, in recv_into
+    return sock.recv_into(*args, **kwargs)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/bench_helper.py", line 110, in <module>
+    main()
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/bench_helper.py", line 20, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/commands/scheduler.py", line 203, in start_worker
+    start_worker(queue, quiet=quiet)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/background_jobs.py", line 196, in start_worker
+    Worker(queues, name=get_worker_name(queue)).work(logging_level=logging_level)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 626, in work
+    self.register_death()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 326, in register_death
+    p.execute()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 4019, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3894, in _execute_transaction
+    self.parse_response(connection, '_')
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 452, in read_from_socket
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/bench_helper.py", line 110, in <module>
+    main()
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/bench_helper.py", line 20, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/commands/scheduler.py", line 203, in start_worker
+    start_worker(queue, quiet=quiet)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/background_jobs.py", line 196, in start_worker
+    Worker(queues, name=get_worker_name(queue)).work(logging_level=logging_level)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 626, in work
+    self.register_death()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 326, in register_death
+    p.execute()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11003. Connection refused.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+15:29:09 Worker rq:worker:b414fd34b501463ca609cfb9a9d352be.eorchids-HP-Laptop-15-bs1xx.7926.default: found an unhandled exception, quitting...
+Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 427, in read_from_socket
+    bufflen = recv_into(self._sock, self._buffer)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/_compat.py", line 75, in recv_into
+    return sock.recv_into(*args, **kwargs)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 595, in work
+    self.execute_job(job, queue)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 856, in execute_job
+    self.monitor_work_horse(job, queue)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 786, in monitor_work_horse
+    retpid, ret_val = self.wait_for_horse()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 433, in wait_for_horse
+    pid, stat = os.waitpid(self.horse_pid, 0)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 461, in request_stop
+    self._shutdown()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 470, in _shutdown
+    self.set_shutdown_requested_date()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 330, in set_shutdown_requested_date
+    self.connection.hset(self.key, 'shutdown_requested_date', utcformat(utcnow()))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3050, in hset
+    return self.execute_command('HSET', name, *items)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 452, in read_from_socket
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/bench_helper.py", line 110, in <module>
+    main()
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/bench_helper.py", line 20, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/commands/scheduler.py", line 203, in start_worker
+    start_worker(queue, quiet=quiet)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/background_jobs.py", line 196, in start_worker
+    Worker(queues, name=get_worker_name(queue)).work(logging_level=logging_level)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 626, in work
+    self.register_death()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 326, in register_death
+    p.execute()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11003. Connection refused.
+    self.run()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+        self.run()self.run()
+
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+        if not block and not conn.can_read(timeout=timeout):response = self.parse_response(block=False, timeout=timeout)
+
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    return self._parser.can_read(timeout)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/monitor.py", line 105, in flush
+    logs = frappe.cache().lrange(MONITOR_REDIS_KEY, 0, -1)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/redis_wrapper.py", line 152, in lrange
+    return super(RedisWrapper, self).lrange(self.make_key(key), start, stop)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 1975, in lrange
+    return self.execute_command('LRANGE', name, start, end)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:13003. Connection refused.
+15:29:14 Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 1020, in perform_job
+    self.handle_job_success(job=job,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 970, in handle_job_success
+    pipeline.watch(job.dependents_key)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 4041, in watch
+    return self.execute_command('WATCH', *names)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3822, in execute_command
+    return self.immediate_execute_command(*args, **kwargs)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3836, in immediate_execute_command
+    conn = self.connection_pool.get_connection(command_name,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11003. Connection refused.
+
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/botocore/httpsession.py:18: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/bench_helper.py", line 110, in <module>
+    main()
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/bench_helper.py", line 20, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/commands/scheduler.py", line 203, in start_worker
+    start_worker(queue, quiet=quiet)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/background_jobs.py", line 196, in start_worker
+    Worker(queues, name=get_worker_name(queue)).work(logging_level=logging_level)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 626, in work
+    self.register_death()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 326, in register_death
+    p.execute()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11003. Connection refused.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+Traceback (most recent call last):
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+redis.exceptions.ConnectionError    : sock = self._connect()Connection closed by server.
+
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/bench_helper.py", line 110, in <module>
+    main()
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/bench_helper.py", line 20, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/commands/scheduler.py", line 203, in start_worker
+    start_worker(queue, quiet=quiet)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/background_jobs.py", line 196, in start_worker
+    Worker(queues, name=get_worker_name(queue)).work(logging_level=logging_level)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 626, in work
+    self.register_death()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 326, in register_death
+    p.execute()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11003. Connection refused.
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/botocore/httpsession.py:18: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/botocore/httpsession.py:18: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/botocore/httpsession.py:18: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/botocore/httpsession.py:18: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/botocore/httpsession.py:18: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 427, in read_from_socket
+    bufflen = recv_into(self._sock, self._buffer)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/_compat.py", line 75, in recv_into
+Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 427, in read_from_socket
+    bufflen = recv_into(self._sock, self._buffer)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/_compat.py", line 75, in recv_into
+    return sock.recv_into(*args, **kwargs)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return sock.recv_into(*args, **kwargs)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/bench_helper.py", line 110, in <module>
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/bench_helper.py", line 110, in <module>
+    main()
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/bench_helper.py", line 20, in main
+    click.Group(commands=commands)(prog_name="bench")
+    main()
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/bench_helper.py", line 20, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+        return self.main(*args, **kwargs)return self.main(*args, **kwargs)
+
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+    rv = self.invoke(ctx)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/commands/scheduler.py", line 203, in start_worker
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/commands/scheduler.py", line 203, in start_worker
+    start_worker(queue, quiet=quiet)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/background_jobs.py", line 196, in start_worker
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+Exception in thread Thread-1:
+Traceback (most recent call last):
+    start_worker(queue, quiet=quiet)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/background_jobs.py", line 196, in start_worker
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    Worker(queues, name=get_worker_name(queue)).work(logging_level=logging_level)
+      File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 626, in work
+self.run()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    Worker(queues, name=get_worker_name(queue)).work(logging_level=logging_level)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 626, in work
+    pubsub.get_message(ignore_subscribe_messages=True,
+      File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    if not block and not conn.can_read(timeout=timeout):    
+return self._parser.can_read(timeout)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    if not block and not conn.can_read(timeout=timeout):    
+return self.read_from_socket(timeout=timeout,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    return self._parser.can_read(timeout)
+      File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+return self._parser.can_read(timeout)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    return self.read_from_socket(timeout=timeout,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+13:15:23 Worker rq:worker:431cffbae1644dd3a083ce195d02236d.eorchids-HP-Laptop-15-bs1xx.6637.default: found an unhandled exception, quitting...
+Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 427, in read_from_socket
+    bufflen = recv_into(self._sock, self._buffer)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/_compat.py", line 75, in recv_into
+    return sock.recv_into(*args, **kwargs)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 595, in work
+    self.execute_job(job, queue)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 856, in execute_job
+    self.monitor_work_horse(job, queue)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 786, in monitor_work_horse
+    retpid, ret_val = self.wait_for_horse()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 433, in wait_for_horse
+    pid, stat = os.waitpid(self.horse_pid, 0)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 461, in request_stop
+    self._shutdown()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 470, in _shutdown
+    self.set_shutdown_requested_date()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 330, in set_shutdown_requested_date
+    self.connection.hset(self.key, 'shutdown_requested_date', utcformat(utcnow()))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3050, in hset
+    return self.execute_command('HSET', name, *items)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 452, in read_from_socket
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+    self.register_death()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 326, in register_death
+    self.register_death()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 326, in register_death
+redis.exceptionsredis.exceptions.ConnectionError: Connection closed by server.
+    p.execute()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 4019, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3894, in _execute_transaction
+    self.parse_response(connection, '_')
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+.ConnectionError: Connection closed by server.
+    p.execute()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 4019, in execute
+    result = Redis.parse_response(
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    return execute(conn, stack, raise_on_error)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3894, in _execute_transaction
+    response = connection.read_response()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 739, in read_response
+Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    response = self._parser.read_response()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 470, in read_response
+    raise err
+      File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+self.read_from_socket()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 452, in read_from_socket
+        raise ConnectionError("Error while reading from socket: %s" %sock.connect(socket_address)
+
+redis.exceptionsConnectionRefusedError.: ConnectionError[Errno 111] Connection refused: 
+
+During handling of the above exception, another exception occurred:
+
+Error while reading from socket: (104, 'Connection reset by peer')Traceback (most recent call last):
+
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    self.parse_response(connection, '_')    
+return _run_code(code, main_globals, None,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/bench_helper.py", line 110, in <module>
+    main()
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/bench_helper.py", line 20, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    result = Redis.parse_response(
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    response = connection.read_response()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 470, in read_response
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/commands/scheduler.py", line 203, in start_worker
+        start_worker(queue, quiet=quiet)self.read_from_socket()
+
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 452, in read_from_socket
+  File "/home/eorchids/frappe-bench13/apps/frappe/frappe/utils/background_jobs.py", line 196, in start_worker
+    Worker(queues, name=get_worker_name(queue)).work(logging_level=logging_level)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 626, in work
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+    self.register_death()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 326, in register_death
+    p.execute()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11003. Connection refused.
+13:15:33 Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 1020, in perform_job
+    self.handle_job_success(job=job,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/rq/worker.py", line 970, in handle_job_success
+    pipeline.watch(job.dependents_key)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 4041, in watch
+    return self.execute_command('WATCH', *names)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3822, in execute_command
+    return self.immediate_execute_command(*args, **kwargs)
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/client.py", line 3836, in immediate_execute_command
+    conn = self.connection_pool.get_connection(command_name,
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11003. Connection refused.
+

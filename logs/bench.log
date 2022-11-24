@@ -1,0 +1,105 @@
+2022-11-17 17:46:24,120 DEBUG cd frappe-bench13 && python3 -m venv env
+2022-11-17 17:46:29,694 DEBUG cd frappe-bench13 && /home/eorchids/frappe-bench13/env/bin/python -m pip install --quiet --upgrade pip
+2022-11-17 17:46:34,793 LOG Getting frappe
+2022-11-17 17:46:34,793 DEBUG cd frappe-bench13/apps && git clone https://github.com/frappe/frappe.git --branch version-13 --depth 1 --origin upstream
+2022-11-17 17:46:43,968 LOG Installing frappe
+2022-11-17 17:46:43,968 DEBUG cd /home/eorchids/frappe-bench13 && /home/eorchids/frappe-bench13/env/bin/python -m pip install --quiet --upgrade -e /home/eorchids/frappe-bench13/apps/frappe 
+2022-11-17 17:48:15,186 DEBUG cd /home/eorchids/frappe-bench13/apps/frappe && yarn install
+2022-11-17 17:51:03,731 DEBUG cd frappe-bench13 && bench build
+2022-11-17 17:51:03,865 INFO /usr/local/bin/bench build
+2022-11-17 17:52:32,928 LOG setting up backups
+2022-11-17 17:52:33,133 LOG backups were set up
+2022-11-17 17:52:33,133 INFO Bench frappe-bench13 initialized
+2022-11-17 17:53:27,922 INFO /usr/local/bin/bench new-site dcode13.com
+2022-11-17 17:56:14,922 INFO /usr/local/bin/bench use dcode13.com
+2022-11-17 17:56:37,881 INFO /usr/local/bin/bench get-app payments
+2022-11-17 17:56:39,869 LOG Getting payments
+2022-11-17 17:56:39,870 DEBUG cd ./apps && git clone https://github.com/frappe/payments.git  --depth 1 --origin upstream
+2022-11-17 17:56:42,324 LOG Installing payments
+2022-11-17 17:56:42,556 DEBUG cd /home/eorchids/frappe-bench13 && /home/eorchids/frappe-bench13/env/bin/python -m pip install --quiet --upgrade -e /home/eorchids/frappe-bench13/apps/payments 
+2022-11-17 17:56:48,396 DEBUG bench build --app payments
+2022-11-17 17:56:48,527 INFO /usr/local/bin/bench build --app payments
+2022-11-17 17:57:02,683 INFO /usr/local/bin/bench get-app erpnext --branch version-13
+2022-11-17 17:57:03,615 LOG Getting erpnext
+2022-11-17 17:57:03,615 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-13 --depth 1 --origin upstream
+2022-11-17 17:57:13,140 LOG Installing erpnext
+2022-11-17 17:57:13,440 DEBUG cd /home/eorchids/frappe-bench13 && /home/eorchids/frappe-bench13/env/bin/python -m pip install --quiet --upgrade -e /home/eorchids/frappe-bench13/apps/erpnext 
+2022-11-17 17:58:22,973 DEBUG cd /home/eorchids/frappe-bench13/apps/erpnext && yarn install
+2022-11-17 17:58:24,494 DEBUG bench build --app erpnext
+2022-11-17 17:58:24,635 INFO /usr/local/bin/bench build --app erpnext
+2022-11-17 17:59:00,160 INFO /usr/local/bin/bench --site dcode13.com install-app erpnext
+2022-11-17 18:00:01,432 INFO /usr/local/bin/bench --verbose --site all backup
+2022-11-17 18:06:44,313 INFO /usr/local/bin/bench start
+2022-11-17 18:06:44,796 INFO /usr/local/bin/bench schedule
+2022-11-17 18:06:44,946 INFO /usr/local/bin/bench worker --queue long
+2022-11-17 18:06:44,977 INFO /usr/local/bin/bench worker --queue default
+2022-11-17 18:06:45,031 INFO /usr/local/bin/bench serve --port 8003
+2022-11-17 18:06:45,066 INFO /usr/local/bin/bench worker --queue short
+2022-11-17 18:06:45,081 INFO /usr/local/bin/bench watch
+2022-11-18 10:17:33,325 INFO /usr/local/bin/bench start
+2022-11-18 10:17:36,247 INFO /usr/local/bin/bench schedule
+2022-11-18 10:17:36,262 INFO /usr/local/bin/bench worker --queue default
+2022-11-18 10:17:36,266 INFO /usr/local/bin/bench worker --queue short
+2022-11-18 10:17:36,276 INFO /usr/local/bin/bench worker --queue long
+2022-11-18 10:17:36,290 INFO /usr/local/bin/bench watch
+2022-11-18 10:17:36,296 INFO /usr/local/bin/bench serve --port 8003
+2022-11-18 12:00:03,798 INFO /usr/local/bin/bench --verbose --site all backup
+2022-11-18 15:42:25,666 INFO /usr/local/bin/bench start
+2022-11-18 15:42:28,809 INFO /usr/local/bin/bench schedule
+2022-11-18 15:42:28,831 INFO /usr/local/bin/bench worker --queue long
+2022-11-18 15:42:28,837 INFO /usr/local/bin/bench worker --queue short
+2022-11-18 15:42:28,859 INFO /usr/local/bin/bench worker --queue default
+2022-11-18 15:42:28,861 INFO /usr/local/bin/bench watch
+2022-11-18 15:42:28,876 INFO /usr/local/bin/bench serve --port 8003
+2022-11-18 18:00:04,685 INFO /usr/local/bin/bench --verbose --site all backup
+2022-11-19 10:00:40,225 INFO /usr/local/bin/bench start
+2022-11-19 10:00:43,256 INFO /usr/local/bin/bench worker --queue long
+2022-11-19 10:00:43,282 INFO /usr/local/bin/bench watch
+2022-11-19 10:00:43,288 INFO /usr/local/bin/bench schedule
+2022-11-19 10:00:43,306 INFO /usr/local/bin/bench worker --queue default
+2022-11-19 10:00:43,327 INFO /usr/local/bin/bench worker --queue short
+2022-11-19 10:00:43,341 INFO /usr/local/bin/bench serve --port 8003
+2022-11-19 12:00:03,819 INFO /usr/local/bin/bench --verbose --site all backup
+2022-11-19 12:19:39,578 INFO /usr/local/bin/bench set-config developer_mode 1
+2022-11-19 12:20:48,480 INFO /usr/local/bin/bench start
+2022-11-19 12:20:51,490 INFO /usr/local/bin/bench watch
+2022-11-19 12:20:51,594 INFO /usr/local/bin/bench serve --port 8003
+2022-11-19 12:20:51,597 INFO /usr/local/bin/bench worker --queue short
+2022-11-19 12:20:51,632 INFO /usr/local/bin/bench schedule
+2022-11-19 12:20:51,643 INFO /usr/local/bin/bench worker --queue long
+2022-11-19 12:20:51,695 INFO /usr/local/bin/bench worker --queue default
+2022-11-21 10:09:16,100 INFO /usr/local/bin/bench start
+2022-11-21 10:09:19,162 INFO /usr/local/bin/bench worker --queue default
+2022-11-21 10:09:19,166 INFO /usr/local/bin/bench worker --queue long
+2022-11-21 10:09:19,169 INFO /usr/local/bin/bench serve --port 8003
+2022-11-21 10:09:19,179 INFO /usr/local/bin/bench schedule
+2022-11-21 10:09:19,191 INFO /usr/local/bin/bench worker --queue short
+2022-11-21 10:09:19,206 INFO /usr/local/bin/bench watch
+2022-11-21 12:00:03,038 INFO /usr/local/bin/bench --verbose --site all backup
+2022-11-21 18:00:04,183 INFO /usr/local/bin/bench --verbose --site all backup
+2022-11-22 10:00:15,026 INFO /usr/local/bin/bench start
+2022-11-22 10:00:18,111 INFO /usr/local/bin/bench serve --port 8003
+2022-11-22 10:00:18,115 INFO /usr/local/bin/bench worker --queue short
+2022-11-22 10:00:18,199 INFO /usr/local/bin/bench worker --queue long
+2022-11-22 10:00:18,209 INFO /usr/local/bin/bench schedule
+2022-11-22 10:00:18,228 INFO /usr/local/bin/bench watch
+2022-11-22 10:00:18,230 INFO /usr/local/bin/bench worker --queue default
+2022-11-22 12:00:02,573 INFO /usr/local/bin/bench --verbose --site all backup
+2022-11-22 18:00:03,536 INFO /usr/local/bin/bench --verbose --site all backup
+2022-11-23 10:42:37,520 INFO /usr/local/bin/bench start
+2022-11-23 10:42:40,401 INFO /usr/local/bin/bench worker --queue long
+2022-11-23 10:42:40,409 INFO /usr/local/bin/bench serve --port 8003
+2022-11-23 10:42:40,447 INFO /usr/local/bin/bench watch
+2022-11-23 10:42:40,448 INFO /usr/local/bin/bench worker --queue short
+2022-11-23 10:42:40,463 INFO /usr/local/bin/bench worker --queue default
+2022-11-23 10:42:40,470 INFO /usr/local/bin/bench schedule
+2022-11-23 12:00:02,448 INFO /usr/local/bin/bench --verbose --site all backup
+2022-11-23 18:00:03,448 INFO /usr/local/bin/bench --verbose --site all backup
+2022-11-24 10:47:32,250 INFO /usr/local/bin/bench start
+2022-11-24 10:47:41,195 INFO /usr/local/bin/bench watch
+2022-11-24 10:47:41,364 INFO /usr/local/bin/bench worker --queue long
+2022-11-24 10:47:41,376 INFO /usr/local/bin/bench worker --queue short
+2022-11-24 10:47:41,387 INFO /usr/local/bin/bench schedule
+2022-11-24 10:47:41,418 INFO /usr/local/bin/bench worker --queue default
+2022-11-24 10:47:41,473 INFO /usr/local/bin/bench serve --port 8003
+2022-11-24 12:00:04,576 INFO /usr/local/bin/bench --verbose --site all backup

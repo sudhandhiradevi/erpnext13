@@ -1,0 +1,9 @@
+2022-11-22 17:30:33,969 INFO scheduler Scheduled Job Complete: erpnext.utilities.doctype.video.video.update_youtube_data for dcode13.com
+2022-11-22 17:30:34,313 INFO scheduler Scheduled Job Start: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for dcode13.com
+2022-11-22 17:30:34,773 INFO scheduler Scheduled Job Complete: erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs for dcode13.com
+2022-11-22 17:30:34,888 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for dcode13.com
+2022-11-22 17:30:35,381 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for dcode13.com
+2022-11-22 17:30:35,493 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for dcode13.com
+2022-11-22 17:30:35,980 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for dcode13.com
+2022-11-22 17:30:36,093 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for dcode13.com
+2022-11-22 17:30:36,493 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for dcode13.com
