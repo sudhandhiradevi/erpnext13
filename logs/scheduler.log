@@ -426,3 +426,13 @@
 2022-11-25 11:52:20,666 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for dcode13.com
 2022-11-25 11:52:20,743 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for dcode13.com
 2022-11-25 11:52:20,959 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for dcode13.com
+2022-11-25 12:19:43,215 DEBUG scheduler Queued events for site dcode13.com
+2022-11-25 12:19:43,260 INFO scheduler Scheduled Job Start: erpnext.erpnext_integrations.connectors.shopify_connection.sync_old_orders for dcode13.com
+2022-11-25 12:19:43,265 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts for dcode13.com
+2022-11-25 12:19:47,573 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts for dcode13.com
+2022-11-25 12:19:54,554 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.connectors.shopify_connection.sync_old_orders for dcode13.com
+2022-11-25 12:19:57,122 INFO scheduler Scheduled Job Start: erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries for dcode13.com
+2022-11-25 12:20:02,532 INFO scheduler Scheduled Job Complete: erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries for dcode13.com
+2022-11-25 12:20:02,751 INFO scheduler Scheduled Job Start: erpnext.accounts.doctype.subscription.subscription.process_all for dcode13.com
+2022-11-25 12:20:03,787 INFO scheduler Scheduled Job Start: erpnext.support.doctype.issue.issue.set_service_level_agreement_variance for dcode13.com
+2022-11-25 12:20:03,894 INFO scheduler Scheduled Job Complete: erpnext.accounts.doctype.subscription.subscription.process_all for dcode13.com

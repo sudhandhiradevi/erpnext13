@@ -1105,3 +1105,9 @@ redis.exceptions.ConnectionError: Connection closed by server.
   File "/home/eorchids/frappe-bench13/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
     raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
 redis.exceptions.ConnectionError: Connection closed by server.
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/eorchids/frappe-bench13/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
