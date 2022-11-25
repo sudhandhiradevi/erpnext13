@@ -64,3 +64,9 @@ Backup Summary for dcode13.com at 2022-11-24 12:01:39.030053
 Config  : ./dcode13.com/private/backups/20221124_120014-dcode13_com-site_config_backup.json 247.0B
 Database: ./dcode13.com/private/backups/20221124_120014-dcode13_com-database.sql.gz         1.9MiB
 Backup for Site dcode13.com has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _39198196a8c9790b -p********** _39198196a8c9790b -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./dcode13.com/private/backups/20221124_180046-dcode13_com-database.sql.gz
+
+Backup Summary for dcode13.com at 2022-11-24 18:02:16.550684
+Config  : ./dcode13.com/private/backups/20221124_180046-dcode13_com-site_config_backup.json 247.0B
+Database: ./dcode13.com/private/backups/20221124_180046-dcode13_com-database.sql.gz         1.9MiB
+Backup for Site dcode13.com has been successfully completed
