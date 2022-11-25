@@ -14,6 +14,7 @@
   "name_and_description_section",
   "naming_series",
   "item_code",
+  "test4fromdoctype",
   "variant_of",
   "item_name",
   "item_group",
@@ -948,6 +949,11 @@
    "fieldname": "grant_commission",
    "fieldtype": "Check",
    "label": "Grant Commission"
+  },
+  {
+   "fieldname": "test4fromdoctype",
+   "fieldtype": "Data",
+   "label": "test4fromdoctype"
   }
  ],
  "icon": "fa fa-tag",
@@ -955,7 +961,7 @@
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-28 04:52:10.272256",
+ "modified": "2022-11-25 12:38:04.531219",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",
@@ -1018,7 +1024,6 @@
    "share": 1
   }
  ],
- "quick_entry": 1,
  "search_fields": "item_name,description,item_group,customer_code",
  "show_name_in_global_search": 1,
  "show_preview_popup": 1,

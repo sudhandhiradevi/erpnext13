@@ -2,6 +2,13 @@
 // License: GNU General Public License v3. See license.txt
 
 frappe.provide("erpnext.item");
+frappe.ui.form.on('Item', {
+	test2: function(frm,cdt,cdn) {
+        var d = locals[cdt][cdn];
+        frappe.model.set_value(cdt, cdn, 'test3', (d.test1 + d.test2));
+	
+    }
+});
 
 frappe.ui.form.on("Item", {
 	setup: function(frm) {
