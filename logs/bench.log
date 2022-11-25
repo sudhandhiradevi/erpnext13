@@ -111,3 +111,10 @@
 2022-11-25 10:35:34,056 INFO /usr/local/bin/bench watch
 2022-11-25 10:35:34,107 INFO /usr/local/bin/bench serve --port 8003
 2022-11-25 10:35:34,254 INFO /usr/local/bin/bench schedule
+2022-11-25 11:40:21,320 INFO /usr/local/bin/bench start
+2022-11-25 11:40:26,547 INFO /usr/local/bin/bench worker --queue long
+2022-11-25 11:40:26,563 INFO /usr/local/bin/bench worker --queue short
+2022-11-25 11:40:26,632 INFO /usr/local/bin/bench watch
+2022-11-25 11:40:26,656 INFO /usr/local/bin/bench serve --port 8003
+2022-11-25 11:40:26,709 INFO /usr/local/bin/bench schedule
+2022-11-25 11:40:26,780 INFO /usr/local/bin/bench worker --queue default
