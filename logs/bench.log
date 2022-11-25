@@ -125,3 +125,4 @@
 2022-11-25 11:50:13,612 INFO /usr/local/bin/bench serve --port 8003
 2022-11-25 11:50:13,630 INFO /usr/local/bin/bench worker --queue long
 2022-11-25 11:50:13,642 INFO /usr/local/bin/bench schedule
+2022-11-25 12:00:02,314 INFO /usr/local/bin/bench --verbose --site all backup
