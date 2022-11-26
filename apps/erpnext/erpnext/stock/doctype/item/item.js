@@ -3,13 +3,19 @@
 
 frappe.provide("erpnext.item");
 frappe.ui.form.on('Item', {
-	test2: function(frm,cdt,cdn) {
+    stone_weight: function(frm,cdt,cdn) {
         var d = locals[cdt][cdn];
-        frappe.model.set_value(cdt, cdn, 'test3', (d.test1 + d.test2));
-	
+        frappe.model.set_value(cdt, cdn, 'total', (d.stone_price + d.stone_weight));
+    
     }
 });
-
+frappe.ui.form.on('Item', {
+    stone_price: function(frm,cdt,cdn) {
+        var d = locals[cdt][cdn];
+        frappe.model.set_value(cdt, cdn, 'total', (d.stone_price + d.stone_weight));
+    
+    }
+});
 frappe.ui.form.on("Item", {
 	setup: function(frm) {
 		frm.add_fetch('attribute', 'numeric_values', 'numeric_values');
